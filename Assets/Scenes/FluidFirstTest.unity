@@ -155,17 +155,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5cc929b165ae7d418d9fe1bfa61d32d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numParticlesPerAxis: 20
-  centre: {x: -2.97, y: -0.47, z: -1.29}
-  secondCentre: {x: 3.31, y: 0, z: 0.92}
+  numParticlesPerAxis: 35
+  centre: {x: -4.13, y: -0.47, z: -2.9}
+  secondCentre: {x: 4.18, y: 0, z: 2.5}
   size: 2
   initialVel:
     x: 0
     y: 0
     z: 0
-  jitterStrength: 0.035
+  jitterStrength: 2
   showSpawnBounds: 1
-  debug_numParticles: 8000
+  debug_numParticles: 42875
 --- !u!4 &42687403
 Transform:
   m_ObjectHideFlags: 0
@@ -176,7 +176,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 8.6, y: 5.16, z: 5}
+  m_LocalScale: {x: 11.344261, y: 5.16, z: 9.146501}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 725682488}
@@ -197,12 +197,12 @@ MonoBehaviour:
   timeScale: 0.9
   fixedTimeStep: 0
   iterationsPerFrame: 5
-  gravity: -8
-  collisionDamping: 0.95
+  gravity: -10
+  collisionDamping: 0.059
   smoothingRadius: 0.2
-  targetDensity: 630
+  targetDensity: 400
   pressureMultiplier: 100
-  nearPressureMultiplier: 2.25
+  nearPressureMultiplier: 1.5
   viscosityStrength: 0.001
   fluidShader: {fileID: 7200000, guid: 7f4c5adf44e8ea842a09e91fde331b6c, type: 3}
   spawnerObject: {fileID: 42687402}
@@ -500,7 +500,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0.3941242, y: -0, z: -0, w: 0.91905713}
-  m_LocalPosition: {x: 0, y: 4.05, z: -5.72}
+  m_LocalPosition: {x: 0, y: 3.316, z: -6.491}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

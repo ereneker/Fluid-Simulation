@@ -21,8 +21,6 @@ public class Spawner : MonoBehaviour
         
         float3[] points = new float3[numPoints];
         float3[] velocities = new float3[numPoints];
-
-        //int i = 0;
         
         for (int i = 0; i < halfCount; i++)
         {
@@ -31,34 +29,13 @@ public class Spawner : MonoBehaviour
             velocities[i] = initialVel;
         }
         
-        // Second half at centre2
+        
         for (int i = halfCount; i < numPoints; i++)
         {
             float3 jitter = UnityEngine.Random.insideUnitSphere * jitterStrength;
             points[i] = (float3)secondCentre + jitter; // Spawn around 'secondCentre'
             velocities[i] = initialVel;
         }
-
-        //for (int x = 0; x < numParticlesPerAxis; x++)
-        //{
-        //    for (int y = 0; y < numParticlesPerAxis; y++)
-        //    {
-        //        for (int z = 0; z < numParticlesPerAxis; z++)
-        //        {
-        //            float tx = x / (numParticlesPerAxis - 1f);
-        //            float ty = y / (numParticlesPerAxis - 1f);
-        //            float tz = z / (numParticlesPerAxis - 1f);
-        //
-        //            float px = (tx - 0.5f) * size + centre.x;
-        //            float py = (ty - 0.5f) * size + centre.y;
-        //            float pz = (tz - 0.5f) * size + centre.z;
-        //            float3 jitter = UnityEngine.Random.insideUnitSphere * jitterStrength;
-        //            points[i] = new float3(px, py, pz) + jitter;
-        //            velocities[i] = initialVel;
-        //            i++;
-        //        }
-        //    }
-        //}
 
         return new SpawnerData() { points = points, velocities = velocities };
     }
